@@ -1,0 +1,168 @@
+:root {
+    --main-color:#d5d3d3;
+}
+/* start display */
+.d-flex {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    
+}
+.d-flex1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.d-flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.d-flex3 {
+    display: flex;
+    gap: 20px;
+}
+.d-flex4 {
+    display: flex;
+    gap: 20px;
+    background-color: #ddd;
+    min-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px 0px black;
+}
+.d-flex5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.f1 {
+    flex-grow:1;
+}
+.f3 {
+    flex-shrink: 3;
+}
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    gap: 15px;
+}
+.d-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 11px 22px;;
+}
+/* end display */
+/* start padding & sizing */
+.p-10 {
+    padding: 10px;
+}
+.p-20 {
+    padding: 20px;
+}
+.p10-20 {
+    padding: 10px 20px;
+}
+.mt-20 {
+    margin-top: -20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.rad10 {
+    border-radius: 10px;
+}
+.rad20 {
+    border-radius: 20px;
+}
+.w-200 {
+    width: 85px;
+    height: 90%;
+    border-radius: 20px;
+}
+/* end padding & sizing */
+/* start position & seudo elements & color */
+.p-relative {
+    position: relative;
+}
+.p-relative1 {
+    position: relative;
+    left: -55px;
+}
+.bb-mb {
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 15px;
+}
+.bg-red {
+    background-color: #f22121;
+}
+.c-gray {
+    color: gray;
+}
+.c-red {
+    color: red;
+}
+.c-white {
+    color: white;
+}
+.icon-dec {
+    border-left: 1px solid #333;
+    padding-left: 10px;
+    margin: 10px;
+    font-size: 15px;
+}
+.img-offer .img-1 {
+    width: 100%;
+    border-radius: 10px;
+}
+.one-tag {
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: black;
+    text-transform: capitalize;
+    height: 45px;
+    width: 90px;
+    text-align: center;
+    transition:0.3s ;
+    -webkit-transition:0.3s ;
+    -moz-transition:0.3s ;
+    -ms-transition:0.3s ;
+    -o-transition:0.3s ;
+} 
+.one-tag:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+.two-right .img img {
+    min-height: 100%;
+    max-width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+.circ {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    color: #ddd;
+    position: relative;
+    left: 180px;
+    transition:0.3;
+}
+.circ-active {
+    background-color: red;
+    color: white;
+}
+.circ:hover {
+    background-color: red;
+    color: white;
+}
+/* end position & seudo elements */

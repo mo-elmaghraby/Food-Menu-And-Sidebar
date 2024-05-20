@@ -1,0 +1,200 @@
+/*start left part */
+
+.left-part .head input {
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+.two-left h3 {
+    font-family: "satisfy";
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--main-color);
+}
+.left-part .two img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+.left-part .two img:hover {
+    transform:rotate(10deg) ;
+    cursor: pointer;
+}
+.left-part .two .part h3 {
+    font-family: "satisfy";
+}
+.left-part .two .part .icon i {
+    color: red;
+}
+
+/* start img of offer */
+.h-offer h3 {
+    text-decoration: none;
+    padding: 15px;
+    background-color: #ddd;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 40px;
+    margin: 15px;
+    color: black;
+    font-family: 'Satisfy';
+    position: relative;
+    left: 100px;
+}
+.h-offer h3::before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 40px;
+    border: 15px solid;
+    border-color: #ddd transparent transparent transparent;
+}
+.img-offer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: #000000fa;
+    transition: 2s;
+    border-radius: 10px;
+}
+.img-offer:hover::before {
+    width: 0%;
+    top: 0%;
+    left: 50%;
+}
+/* end img of offer */
+
+/*end left part */
+
+/* start two-right  */
+.two-right {
+    transition: 0.3s;
+}
+.two-right:hover {
+    transform: translateY(10PX);
+    cursor: pointer;
+}
+/* end two-right  */
+
+/* start .part-two-right */
+.part-two-right {
+    max-width: 100%;
+}
+.part-two-right .part h3 {
+    font-family:"satisfy" ;
+}
+.part-two-right .icon i {
+    color: red;
+}
+.part-two-right p {
+    line-height: 1.7;
+}
+.part-two-right h5:hover {
+    cursor: pointer;
+}
+/* end .part-two-right */
+/*start thelast part of menu  */
+.end-menu {
+    display: flex;
+    align-items: center;
+    max-width: 65%;
+    height: 100px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    position: relative;
+    top: 70px;
+    z-index: 3;
+}
+.end-menu h3 {
+    font-family: 'Satisfy';
+    font-size: 28px;
+}
+.end-menu .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*start toggel part  */
+.toggel::after {
+    content: "Email addrees";
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    width: 230px;
+    height: 40px;
+    background-color: #ff616194;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.toggel::before {
+    content: "subscribe";
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 155px;
+    width: 90px;
+    height: 20px;
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 3px 0px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.toggel:checked::after {
+    background-color: white;
+    color: red;
+}
+.toggel:checked:before {
+    background-color: red;
+    color: white;
+}
+/*end toggel part  */
+
+[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* start last image */
+.last-img {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+.last-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    z-index: 1;
+}
+.last-img img {
+    position: relative;
+    width: 100%;
+    top: -125px;
+}
+/* end last image */
+/*end thelast part of menu  */
