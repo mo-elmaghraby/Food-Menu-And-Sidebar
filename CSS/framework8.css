@@ -164,5 +164,6 @@
 .circ:hover {
     background-color: red;
     color: white;
+    cursor: pointer;
 }
 /* end position & seudo elements */
